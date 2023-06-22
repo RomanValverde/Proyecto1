@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudiantes | AppCoder</title>
-</head>
-<body>
+<div>
+    {% extends "AppCoder/inicio.html" %}
+    {% load static %}
     
-</body>
-</html>
+        {% block contenidoQueCambia %}
+            <p>Estudiantes</p>
+            <div class="formSetEstudiante">
+                {% block setEstudiante %}
+                {% endblock %}
+            </div>          
+            <div class="formGetEstudiante">
+                {% block getEstudiante %}
+                {% endblock %}
+            </div>          
+        {% endblock %}
+</div>
