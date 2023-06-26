@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'AppCoder/css/bootstrap.min.css' %}" rel="stylesheet"/>
-    <link href="{% static 'AppCoder/css/romastyle.css' % }" rel="styleshheet"/>
+    <link href="{% static 'AppCoder/css/romastyle.css' %}" rel="stylesheet"/>
     <script src="{% static 'AppCoder/js/bootstarp.min.js' %}"></script>
     <title>Inicio | AppCoder</title>
 </head>
@@ -14,24 +14,23 @@
     <!-- <div id="page" class="hfeed site"> -->
     
     
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-              <div class="navbar-brand ml-auto" href="{% url 'Inicio' %}">FLAMA PUTO</div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4" href="{% url 'Inicio' %}">AppCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="{% url 'Inicio' %}">Home</a>
-                  <a class="nav-link" href="{% url 'Curso' %}">Cursos</a>
-                  <a class="nav-link" href="{% url 'Profesores' %}">Profesores</a>
-                  <a class="nav-link" href="{% url 'Estudiantes' %}">Estudiantes</a>
-                  <a class="nav-link" href="{% url 'Entregables' %}">Entregables</a>
-                  
+                    <a class="nav-link" href="{% url 'Curso' %}">Cursos</a>
+                    <a class="nav-link" href="{% url 'Profesores' %}">Profesores</a>
+                    <a class="nav-link" href="{% url 'Estudiantes' %}">Estudiantes</a>
+                    <a class="nav-link" href="{% url 'Entregables' %}">Entregables</a>
                 </div>
-              </div>
             </div>
-          </nav>
+        </div>
+    </nav>
+    
           {% block contenidoQueCambia%}
 
           {% endblock %}
