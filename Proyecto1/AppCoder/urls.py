@@ -10,5 +10,8 @@ urlpatterns = [
     path('setEstudiante/',setEstudiantes, name="setEstudiante"),
     path('getEstudiante/',getEstudiantes, name="getEstudiante"),
     path('buscarEstudiante/',buscarEstudiantes, name="buscarEstudiante"),
-    path('editarEstudiante/',editarEstudiante, name="editarEstudiante"),
+    #path('editarEstudiante/',editarEstudiante, name="editarEstudiante"),
+    path('setProfesor/',setProfesor, name="setProfesor"),
+    path('setCurso/',setCurso, name="setCurso"),
+    path('setEntregable/',setEntregable, name="setEntregable"),
 ]

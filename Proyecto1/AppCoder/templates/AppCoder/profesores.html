@@ -1,5 +1,16 @@
 {% extends "AppCoder/inicio.html" %}
     {% load static %}
-    {% block contenidoQueCambia %}
-    <p>Profesores</p>
-    {% endblock %}
+        
+        {% block contenidoQueCambia %}
+            <p>Profesores</p>
+            <div class="card-container">
+                {% block setProfesor %}
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ingresar un profesor</h5>
+                        <p class="card-text">Aquí podremos ingresar un profesor a la base de datos.</p>
+                        <a href="{% url 'setProfesor' %} " class="btn btn-primary">Ingresar profesor</a>
+                    </div>
+                </div>
+                {% endblock %}
+{% endblock %}
