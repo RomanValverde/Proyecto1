@@ -133,7 +133,8 @@ def leerEstudiantes(request):
  """
 
 
-""" 26/06 def setEstudiantes(request):
+#26/06 
+""" def setEstudiantes(request):
     Estudiantes = Estudiante.objects.all()
     #return render(request, "AppCoder/estudiantes.html",{"Estudiantes": Estudiantes})
     if request.method == 'POST':

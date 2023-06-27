@@ -7,7 +7,6 @@
     <link href="{% static 'AppCoder/css/bootstrap.min.css' %}" rel="stylesheet"/>
     <link href="{% static 'AppCoder/css/romastyle.css' %}" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{% static 'AppCoder/js/bootstrap.min.js' %}"></script>
     <title>AppCoder</title>
 </head>
@@ -29,15 +28,9 @@
         </div>
     </nav>
 
-    <div class="image-container">
-        <img src="{% static 'AppCoder/img/background.jpg' %}" alt="Imagen" class="image">
-        <div class="overlay">
-            <h1 class="centered-text">Bienvenidos a mi tercer entrega de Python.</h1>
-        </div>
-        
-        {% block contenidoQueCambia%}
-        {% endblock %}
-    </div>          
+    
+    {% block contenidoQueCambia%}
+    {% endblock %}
 
 <footer class="footer">
     <div class="container">
@@ -75,11 +68,6 @@
         </div>
     </div>
 </footer>      
-<script>
-    var footerResize = function() {
-      $('#footer').css('position', $("body").height() + $("#footer").innerHeight() > $(window).height() ? "inherit" : "fixed");
-    };
-    $(window).resize(footerResize).ready(footerResize);
-  </script>
+
 </body>
 </html>

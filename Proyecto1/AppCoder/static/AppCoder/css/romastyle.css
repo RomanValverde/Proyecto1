@@ -13,7 +13,7 @@
 
 .image {
   max-width: 100%;
-  height: auto;
+  height: auto;  
 }
 
 .overlay {
@@ -34,28 +34,35 @@
 .card-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
 .card {
     width: 18rem;
     margin-right: 10px;
     margin-left: 10px;
+    
   }
+
+.card-body {
+  color: white;
+
+}  
   
 .titulo-entregables {
     font-size: 24px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .espacio-entregables {
-    height: 40px;
+    height: 150px;
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -63,7 +70,8 @@
   padding: 20px;
   text-align: center;
   text-decoration-color: aliceblue;
-  margin-top: 40px;
+  margin-top: auto;  
+  
 }  
   
 .footer h3{
@@ -88,3 +96,13 @@
   text-align: left;
   margin-left: -220px;
 }
+
+body {
+background-image: url(../img/background.jpg);
+background-size: 100%;
+background-position-y: 10%;
+
+}
+
+
+  
