@@ -3,7 +3,7 @@
     {% load static %}
     
     {% block setEstudiante %}
-        <p>Crear Estudiante</p>
+        
         <form action="/AppCoder/setEstudiante/" method="post"> {% csrf_token %}
             <table>
                 {{ miFormulario.as_table }}

@@ -2,6 +2,35 @@
     margin-left: auto !important;
   }
 
+.navbar-expand-lg .navbar-collapse{
+  padding-left: 700px !important;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo y la opacidad según tus preferencias */
+  padding: 20px;
+  text-align: center;
+  color: #fff; /* Cambia el color del texto según tus preferencias */
+}
+
+.centered-text {
+  text-align: center;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -25,6 +54,37 @@
     height: 40px;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2e0456d3;
+  padding: 20px;
+  text-align: center;
+  text-decoration-color: aliceblue;
+  margin-top: 40px;
+}  
   
-  
-  
+.footer h3{
+  color: white !important;
+  margin-left: 25px !important;
+
+}
+
+.footer p{
+  color: white;  
+}
+
+.container ul {
+  list-style: none;
+}
+
+.estudiantes-list {
+  padding-left: 0;
+}
+
+.estudiante-info {
+  text-align: left;
+  margin-left: -220px;
+}
