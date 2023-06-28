@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'AppCoder/css/bootstrap.min.css' %}" rel="stylesheet"/>
-    <link href="{% static 'AppCoder/css/romastyle.css' %}" rel="stylesheet"/>
+    <link href="{% static 'AppCoder/css/main.css' %}" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
     <script src="{% static 'AppCoder/js/bootstrap.min.js' %}"></script>
     <title>AppCoder</title>
 </head>
-<body class="">
+<body>
+  <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-4" href="{% url 'Inicio' %}">AppCoder</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="{% url 'Curso' %}">Cursos</a>
-                    <a class="nav-link" href="{% url 'Profesores' %}">Profesores</a>
-                    <a class="nav-link" href="{% url 'Estudiantes' %}">Estudiantes</a>
-                    <a class="nav-link" href="{% url 'Entregables' %}">Entregables</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+      <div class="container-fluid">
+          <a class="navbar-brand ms-4" href="{% url 'Inicio' %}">AppCoder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <a class="nav-link" href="{% url 'Curso' %}">Cursos</a>
+                  <a class="nav-link" href="{% url 'Profesores' %}">Profesores</a>
+                  <a class="nav-link" href="{% url 'Estudiantes' %}">Estudiantes</a>
+                  <a class="nav-link" href="{% url 'Entregables' %}">Entregables</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  </header>
 
-    
-    
+  <main>
+    <h1>Bienvenidos a mi tercer entrega de Python.</h1>
     {% block contenidoQueCambia%}
+    <div class="main-text">
+        <h3>En esta web, podremos gestionar profesores, cursos, estudiantes y entregables.</h3>
+    </div>
     {% endblock %}
-    
-    <div class="overlay">
-        <h1 class="centered-text">Bienvenidos a mi tercer entrega de Python.</h1>
+  </main>
+
+  <footer class="footer">
+        
+    <div class="row">
+    <div class="col-md-4">
+        <h3>Contacto</h3>
+        <p>Teléfono: (011) 4403-6095</p>
+        <p>Email: romanvalverde@hotmail.com.ar</p>
+        <p>Buenos Aires, Argentina</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Enlaces útiles</h3>
+        <ul>
+        <li><a href="{% url 'Inicio' %}">Inicio</a></li>
+        <li><a href="{% url 'Curso' %}">Cursos</a></li>
+        <li><a href="{% url 'Profesores' %}">Profesores</a></li>
+        <li><a href="{% url 'Estudiantes' %}">Estudiantes</a></li>
+        <li><a href="{% url 'Entregables' %}">Entregables</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h3>Redes sociales</h3>
+        <ul class="social-links">
+        <li><a href="https://es-la.facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://ar.linkedin.com/in/roman-valverde-b78298151"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/RomanValverde"><i class="fa fa-github"></i></a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-light" href="{% url 'Inicio' %}">Roman Valverde</a>
     </div>
 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-        <div class="col-md-4">
-            <h3>Contacto</h3>
-            <p>Teléfono: (011) 4403-6095</p>
-            <p>Email: romanvalverde@hotmail.com.ar</p>
-            <p>Buenos Aires, Argentina</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Enlaces útiles</h3>
-            <ul>
-            <li><a href="{% url 'Inicio' %}">Inicio</a></li>
-            <li><a href="{% url 'Curso' %}">Cursos</a></li>
-            <li><a href="{% url 'Profesores' %}">Profesores</a></li>
-            <li><a href="{% url 'Estudiantes' %}">Estudiantes</a></li>
-            <li><a href="{% url 'Entregables' %}">Entregables</a></li>
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <h3>Redes sociales</h3>
-            <ul class="social-links">
-            <li><a href="https://es-la.facebook.com"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://ar.linkedin.com/in/roman-valverde-b78298151"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/RomanValverde"><i class="fa fa-github"></i></a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright:
-            <a class="text-dark" href="{% url 'Inicio' %}">Roman Valverde</a>
-        </div>
-    </div>
-</footer>      
-
+</footer>
 </body>
 </html>

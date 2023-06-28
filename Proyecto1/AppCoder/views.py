@@ -4,7 +4,7 @@ from django.shortcuts import render
 from AppCoder.models import *
 from AppCoder.forms import *
 
-# Create your views here.
+# Create your views
 
 def inicio(request):
     return render(request, "AppCoder/inicio.html")

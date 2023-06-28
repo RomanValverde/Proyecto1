@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Proyecto1.view import *
+from django.views.generic import RedirectView
 
 urlpatterns = [
-    path('', saludo),
+    #path('', saludo),
+    path('', RedirectView.as_view(url='/AppCoder/inicio', permanent=True)),
     path('admin/', admin.site.urls),
     path('saludo/', saludo),
     path('segundaVista/', segundaVista),
