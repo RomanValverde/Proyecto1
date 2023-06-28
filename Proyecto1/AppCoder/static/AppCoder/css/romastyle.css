@@ -18,17 +18,18 @@
 
 .overlay {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo y la opacidad según tus preferencias */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   text-align: center;
-  color: #fff; /* Cambia el color del texto según tus preferencias */
+  color: #fff;
 }
 
 .centered-text {
   text-align: center;
+ 
 }
 
 .card-container {
@@ -61,6 +62,10 @@
     height: 150px;
 }
 
+.espacio-entregables2 {
+  height: 40px;
+}
+
 .footer {
   position: absolute;
   left: 0;
@@ -89,12 +94,59 @@
 }
 
 .estudiantes-list {
-  padding-left: 0;
+  padding-left: 250;
 }
 
 .estudiante-info {
   text-align: left;
   margin-left: -220px;
+}
+
+.form-group label {
+  color: black;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.form-group input,
+.form-group select {
+  color: black;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.btn-primary {
+  color: black; 
+  background-color: #007bff;
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.formulario-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.formulario-table th,
+.formulario-table td {
+  padding: 10px;
+  border: 1px solid white;
+  color: black;
+}
+
+.btn-primary {
+  color: black;
+  background-color: #007bff;
+  border: 1px solid white;
+  padding: 5px 10px; 
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
 }
 
 body {

@@ -2,10 +2,12 @@
     {% extends "AppCoder/inicio.html" %}
     {% load static %}
         
-        {% block contenidoQueCambia %}
-            <div class="espacio-entregables"></div>    
-            <h2 class="titulo-entregables">Formulario - Estudiantes</h2>
-            <div class="card-container">
+    {% block contenidoQueCambia %}
+    <div class="espacio-entregables"></div>    
+    <h2 class="titulo-entregables">Formulario - Estudiantes</h2>
+    <div class="card-container">
+        <div class="row">
+            <div class="col-md-6">
                 {% block setEstudiante %}
                 <div class="card-transparent">
                     <div class="card-body">
@@ -14,17 +16,21 @@
                         <a href="{% url 'setEstudiante' %} " class="btn btn-primary">Ingresar estudiante</a>
                     </div>
                 </div>
-        {% endblock %}
-            
-        {% block getEstudiante %}
+                {% endblock %}
+            </div>
+            <div class="col-md-6">
+                {% block getEstudiante %}
                 <div class="card-transparent">
                     <div class="card-body">
                         <h5 class="card-title">Buscar un estudiante</h5>
-                        <p class="card-text">Aquí podremos buscar un estudiante de la base de datos.</p>
+                        <p class="card-text">Aquí podremos buscar un estudiante de la base de datos.</p>                        
                         <a href="{% url 'getEstudiante' %} " class="btn btn-primary">Buscar estudiante</a>
                     </div>
                 </div>
                 {% endblock %}
             </div>
+        </div>
+    </div>
     {% endblock %}
 </div>
+
