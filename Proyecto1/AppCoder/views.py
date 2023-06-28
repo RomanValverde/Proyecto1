@@ -78,10 +78,6 @@ def setEntregable(request):
     return render(request,"AppCoder/setEntregable.html", {"miFormulario" : miFormulario})
 
 
-
-
-
-
     """ METODO VIEJO
       if request.method == 'POST':
         estudiante = Estudiante(nombre = request.POST["nombre"], apellido = request.POST["apellido"],email = request.POST["email"])
@@ -101,6 +97,24 @@ def buscarEstudiantes(request):
         respuesta = "No se enviaron datos"
     
     return HttpResponse(respuesta)
+
+def getCursos(request):
+    return render(request,"AppCoder/getCursos.html")
+
+def buscarCursos(request):
+    if request.GET["nombre"]:
+        nombre = request.GET["nombre"]
+        cursos = Curso.objects.filter(nombre = nombre)
+        return render(request, "AppCoder/getCursos.html", {"cursos": cursos})
+    else:
+        respuesta = "No se enviaron datos"
+    
+    return HttpResponse(respuesta)
+
+
+
+
+
 
 def leerEstudiantes(request):
     Estudiantes = Estudiante.objects.all()

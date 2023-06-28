@@ -2,8 +2,7 @@ body {
   background-image: url(../img/background.jpg);
   background-size: 100%;
   background-position-y: 10%;
-  
-}
+  }
   
 main h1 {
   color: #000000;
@@ -18,7 +17,7 @@ main h1 {
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
   text-align: center;  
   
-  padding-bottom: 12%;
+  padding-bottom: 20%;
 }
 
 .navbar-brand.ml-auto {
@@ -81,11 +80,11 @@ main h1 {
   list-style: none;
 }
 
-.estudiantes-list {
+.forms-list {
   padding-left: 250;
 }
 
-.estudiante-info {
+.forms-info {
   text-align: left;
   margin-left: -220px;
 }
@@ -267,11 +266,11 @@ main h1 {
   list-style: none;
 }
 
-.estudiantes-list {
+.forms-list {
   padding-left: 250;
 }
 
-.estudiante-info {
+.forms-info {
   text-align: left;
   margin-left: -220px;
 }

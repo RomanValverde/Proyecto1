@@ -1,0 +1,21 @@
+<div>
+    {% extends "AppCoder/cursos.html" %}
+    {% load static %}
+    
+    {% block getCursos %}
+        
+        <form action="/AppCoder/buscarCurso/" method="GET">
+            <input placeholder="Nombre" type="text" name="nombre" id="nombre">
+            <input type="submit" value="Buscar">
+        </form>
+
+        {% if cursos %}
+            <ul class="forms-list">
+                {% for curso in cursos %}
+                    <li class="forms-info"><strong>Nombre:</strong> {{ curso.nombre }}</li>
+                    <li class="forms-info"><strong>Comision:</strong> {{ curso.comision }}</li>                    
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endblock %}    
+</div>

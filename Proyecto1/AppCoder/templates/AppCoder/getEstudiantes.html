@@ -10,11 +10,11 @@
         </form>
 
         {% if estudiantes %}
-            <ul class="estudiantes-list">
+            <ul class="forms-list">
                 {% for estudiante in estudiantes %}
-                    <li class="estudiante-info"><strong>Nombre:</strong> {{ estudiante.nombre }}</li>
-                    <li class="estudiante-info"><strong>Apellido:</strong> {{ estudiante.apellido }}</li>
-                    <li class="estudiante-info"><strong>Email:</strong> {{ estudiante.email }}</li>
+                    <li class="forms-info"><strong>Nombre:</strong> {{ estudiante.nombre }}</li>
+                    <li class="forms-info"><strong>Apellido:</strong> {{ estudiante.apellido }}</li>
+                    <li class="forms-info"><strong>Email:</strong> {{ estudiante.email }}</li>
                 {% endfor %}
             </ul>
         {% endif %}

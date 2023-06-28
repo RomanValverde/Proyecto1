@@ -1,16 +1,32 @@
 {% extends "AppCoder/inicio.html" %}
-    {% load static %}
-        
-        {% block contenidoQueCambia %}                
-            <h2 class="titulo-entregables">Formulario - Cursos</h2>
-            <div class="card-container">
-                {% block setCurso %}
-                <div class="card-transparent">
-                    <div class="card-body">
-                        <h5 class="card-title">Ingresar un curso</h5>
-                        <p class="card-text">Aquí podremos ingresar un curso a la base de datos.</p>
-                        <a href="{% url 'setCurso' %} " class="btn btn-primary">Ingresar curso</a>
-                    </div>
+{% load static %}
+    
+{% block contenidoQueCambia %}
+<h2 class="titulo-entregables">Formulario - Cursos</h2>
+    <div class="card-container">
+    <div class="row">
+        <div class="col-md-6">
+            {% block setCurso %}
+            <div class="card-transparent">
+                <div class="card-body">
+                    <h5 class="card-title">Ingresar un curso</h5>
+                    <p class="card-text">Aquí podremos ingresar un curso a la base de datos.</p>
+                    <a href="{% url 'setCurso' %} " class="btn btn-primary">Ingresar curso</a>
                 </div>
-                {% endblock %}
-        {% endblock %}
+            </div>
+            {% endblock %}
+        </div>
+        <div class="col-md-6">
+            {% block getCursos %}
+            <div class="card-transparent">
+                <div class="card-body">
+                    <h5 class="card-title">Buscar un curso</h5>
+                    <p class="card-text">Aquí podremos buscar un curso de la base de datos.</p>                        
+                    <a href="{% url 'getCurso' %} " class="btn btn-primary">Buscar curso</a>
+                </div>
+            </div>
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock %}        
