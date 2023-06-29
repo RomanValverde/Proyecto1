@@ -136,193 +136,34 @@ main h1 {
   background-color: #0069d9;
 }
 
+.formLogin{
+  font-weight: bold;
+  background: linear-gradient(45deg, rgba(1,6,175,1) 0%, rgba(255,91,0,1) 100%);
+  padding: 40px 20px 20px 20px;
+  border-radius: 5px;
+  width: 350px;
+  height: 400px;
 
-
-
-/* body {
-  background-image: url(../img/background.jpg);
-  background-size: 100%;
-  background-position-y: 10%;
-  height: 100vh;
 }
-
-.main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}  
-    
-.navbar-brand.ml-auto {
-    margin-left: auto !important;
-  }
-
-.navbar-expand-lg .navbar-collapse{
-  padding-left: 700px !important;
-}
-
-.image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.image {
-  max-width: 100%;
-  height: auto;  
-}
-
-.overlay {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0);
-  padding: 20px;
-  text-align: center;
-  color: #000000;
-  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
-
-  flex-grow: 1;
+.formLogin div{
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.centered-text {
-  text-align: center;
- 
+.inputLogin{
+  border-radius: 5px;
+  border: 1px solid rebeccapurple;
+  width: 90%;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-   
-  }
-  
-.card {
-    width: 18rem;
-    margin-right: 10px;
-    margin-left: 10px;
-    
-  }
-
-.card-body {
-  color: white;
-
-}  
-  
-.titulo-entregables {
-    font-size: 24px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    color: white;
+.containerForm{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute !important;
+  height: 100% !important;
+  width: 100% !important;
+  /* background-image: url("../assets/img/FondoLogin.jpg"); */
 }
-
-.espacio-entregables {
-    height: 150px;
-}
-
-.espacio-entregables2 {
-  height: 40px;
-}
-
-/* .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #2e0456d3;
-  padding: 20px;
-  text-align: center;
-  text-decoration-color: aliceblue;
-    
-} */
-
-/* .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #2e0456d3;
-  
-  
-  text-align: center;
-  text-decoration-color: aliceblue;
-}
-
-  
-.footer h3{
-  color: white !important;
-  margin-left: 25px !important;
-
-}
-
-.footer p{
-  color: white;  
-}
-
-.footer ul {
-  list-style: none;
-}
-
-.forms-list {
-  padding-left: 250;
-}
-
-.forms-info {
-  text-align: left;
-  margin-left: -220px;
-}
-
-.form-group label {
-  color: black;
-  border: 1px solid white;
-  padding: 5px;
-}
-
-.form-group input,
-.form-group select {
-  color: black;
-  border: 1px solid white;
-  padding: 5px;
-}
-
-.btn-primary {
-  color: black; 
-  background-color: #007bff;
-  border: 1px solid white;
-  padding: 5px 10px;
-}
-
-.btn-primary:hover {
-  background-color: #0069d9;
-}
-
-.formulario-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.formulario-table th,
-.formulario-table td {
-  padding: 10px;
-  border: 1px solid white;
-  color: black;
-}
-
-.btn-primary {
-  color: black;
-  background-color: #007bff;
-  border: 1px solid white;
-  padding: 5px 10px; 
-}
-
-.btn-primary:hover {
-  background-color: #0069d9;
-}
-
-.profesorClass{
-  height: 30%;
-} */
-

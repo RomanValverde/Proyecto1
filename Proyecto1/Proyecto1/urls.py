@@ -17,15 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Proyecto1.view import *
-from django.views.generic import RedirectView
+#from django.views.generic import RedirectView
 
 urlpatterns = [
-    #path('', saludo),
-    path('', RedirectView.as_view(url='/AppCoder/inicio', permanent=True)),
+    path('', include('AppCoder.urls')),
+    #path('', RedirectView.as_view(url='/AppCoder/inicio', permanent=True)),
     path('admin/', admin.site.urls),
-    path('saludo/', saludo),
-    path('segundaVista/', segundaVista),
-    path('miNombreEs/<nombre>', miNombreEs),
-    path('probandoTemplate/', probandoTemplate),
+    #path('saludo/', saludo),
+    #path('segundaVista/', segundaVista),
+    #path('miNombreEs/<nombre>', miNombreEs),
+    #path('probandoTemplate/', probandoTemplate),
     path('AppCoder/', include('AppCoder.urls')),
 ]

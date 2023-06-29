@@ -2,6 +2,7 @@ from django.urls import path, include
 from AppCoder.views import *
 
 urlpatterns = [
+    path('', inicio),
     path('inicio/', inicio, name="Inicio"),
     path('curso/', curso, name="Curso"),
     path('profesor/', profesor, name="Profesores"),
@@ -16,4 +17,5 @@ urlpatterns = [
     path('setProfesor/',setProfesor, name="setProfesor"),
     path('setCurso/',setCurso, name="setCurso"),
     path('setEntregable/',setEntregable, name="setEntregable"),
+    path('login/', myLogin, name='login'),
 ]

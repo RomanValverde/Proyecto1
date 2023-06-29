@@ -3,6 +3,8 @@ from django.template import loader
 from django.shortcuts import render
 from AppCoder.models import *
 from AppCoder.forms import *
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth import login, logout, authenticate
 
 # Create your views
 
@@ -112,16 +114,31 @@ def buscarCursos(request):
     return HttpResponse(respuesta)
 
 
+def myLogin(request):
+    if request.method == "POST":
+        user = authenticate(username = request.POST['user'], password = request.POST['password'])
+        if user is not None:
+            login(request,user)
+            return render(request, "AppCoder/inicio.html")
+        else:
+            return render(request, 'AppCoder/login.html', {'error': 'Usuario o Contraseña incorrectos'})
+    else:
+        return render(request, 'AppCoder/login.html')
 
+def myRegistry(request):
+    if request.method == "POST":
+        userCreate = UserCreationForm(request.POST)
+        if userCreate is not None:
+            userCreate.save()
+            return render(request, 'AppCoder/login.html')
+    else:
+        return render(request, 'AppCoder/register.html')
 
 
 
 def leerEstudiantes(request):
     Estudiantes = Estudiante.objects.all()
     return render(request, "AppCoder/estudiantes.html", {"Estudiantes": Estudiantes} )
-
-
-
 
 # PARA MAS ADELANTE #
 
