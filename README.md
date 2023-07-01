@@ -23,6 +23,6 @@ Proyecto 1 - CoderHouse
 
 - Aqui podremos crear o buscar un entregable.
 
-# En desarrollo
+## En desarrollo
 - Login / Logout / Register
 
